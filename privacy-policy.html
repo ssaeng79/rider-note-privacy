@@ -1,98 +1,164 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>라이더노트 개인정보처리방침</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 24px 16px; color: #1a1a1a; line-height: 1.7; }
-    h1 { font-size: 24px; font-weight: 700; margin-bottom: 8px; color: #E8540A; }
-    h2 { font-size: 18px; font-weight: 600; margin-top: 32px; margin-bottom: 8px; border-bottom: 1px solid #e5e5e5; padding-bottom: 6px; }
-    p, li { font-size: 15px; color: #333; }
-    ul { padding-left: 20px; }
-    .date { font-size: 13px; color: #888; margin-bottom: 32px; }
-    .highlight { background: #fff7ed; border-left: 4px solid #E8540A; padding: 12px 16px; border-radius: 4px; margin: 16px 0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f8f9fa; color: #212529; line-height: 1.7; }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+    .hero { background: linear-gradient(135deg, #E8540A, #ff7b3d); border-radius: 16px; padding: 32px 28px; margin-bottom: 32px; color: #fff; }
+    .hero-icon { font-size: 40px; margin-bottom: 10px; }
+    .hero h1 { font-size: 24px; font-weight: 700; margin-bottom: 6px; }
+    .hero .meta { font-size: 13px; opacity: 0.85; }
+    .card { background: #fff; border-radius: 14px; padding: 24px; margin-bottom: 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+    .card h2 { font-size: 16px; font-weight: 700; color: #E8540A; margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+    .card h2 .num { background: #fff3ed; color: #E8540A; border-radius: 20px; padding: 2px 10px; font-size: 13px; }
+    ul { padding-left: 0; list-style: none; }
+    ul li { padding: 6px 0 6px 18px; position: relative; font-size: 14px; color: #495057; border-bottom: 1px solid #f1f3f5; }
+    ul li:last-child { border-bottom: none; }
+    ul li::before { content: '·'; position: absolute; left: 0; color: #E8540A; font-weight: 700; }
+    ul li strong { color: #212529; font-weight: 600; }
+    ul li .sub { display: block; font-size: 12px; color: #868e96; margin-top: 2px; }
+    .highlight { background: #fff3ed; border-left: 3px solid #E8540A; border-radius: 0 8px 8px 0; padding: 12px 16px; margin-top: 12px; font-size: 13px; color: #495057; }
+    .contact { background: #f1f3f5; border-radius: 10px; padding: 14px 16px; margin-top: 12px; font-size: 14px; }
+    .contact a { color: #E8540A; text-decoration: none; }
+    .badge { display: inline-block; font-size: 11px; background: #e9ecef; color: #495057; border-radius: 4px; padding: 1px 7px; margin-left: 6px; vertical-align: middle; }
   </style>
 </head>
 <body>
+<div class="wrap">
 
-<h1>🏍️ 라이더노트 개인정보처리방침</h1>
-<p class="date">시행일: 2026년 7월 1일 &nbsp;|&nbsp; 최종 수정: 2026년 6월 29일</p>
+  <div class="hero">
+    <div class="hero-icon">🏍️</div>
+    <h1>라이더노트 개인정보처리방침</h1>
+    <div class="meta">시행일: 2026년 7월 1일 &nbsp;|&nbsp; 최종 수정: 2026년 7월 1일</div>
+  </div>
 
-<div class="highlight">
-  라이더노트(이하 "앱")는 사용자의 개인정보를 소중히 여기며, 관련 법령에 따라 개인정보를 보호합니다.
+  <div class="card">
+    <p style="font-size:14px;color:#495057;">라이더노트(이하 "앱")는 사용자의 개인정보를 소중히 여기며, 관련 법령에 따라 개인정보를 보호합니다.</p>
+  </div>
+
+  <!-- 1 -->
+  <div class="card">
+    <h2><span class="num">1</span> 수집하는 개인정보 항목</h2>
+    <ul>
+      <li><strong>계정 정보</strong> — 이메일 주소 (회원가입 및 로그인 시)</li>
+      <li><strong>바이크 정보</strong> — 차종, 연식, 번호판, 주행거리 등 사용자가 직접 입력한 정보</li>
+      <li>
+        <strong>위치 정보</strong> — GPS 위치 (라이딩 경로 기록, 날씨 정보 제공 시)
+        <span class="sub">백그라운드 GPS 추적 포함 (라이딩 기록 중에만 작동)</span>
+      </li>
+      <li><strong>라이딩 기록</strong> — 주행 경로, 거리, 속도, 시간 등</li>
+      <li><strong>정비 기록</strong> — 주유, 정비, 소모품 교체 등 사용자가 입력한 정보</li>
+      <li>
+        <strong>사진 및 카메라</strong> — 바이크 사진 (사용자가 직접 선택하여 업로드한 경우), AI 부품 상태 분석을 위해 카메라로 직접 촬영하거나 갤러리에서 선택한 사진
+        <span class="sub">촬영된 사진은 AI 분석 목적으로만 사용되며, 서버에 별도로 저장되지 않습니다.</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 2 -->
+  <div class="card">
+    <h2><span class="num">2</span> 개인정보 수집 및 이용 목적</h2>
+    <ul>
+      <li>회원 가입 및 본인 확인</li>
+      <li>라이딩 경로 기록 및 관리 서비스 제공</li>
+      <li>날씨 정보 및 AI 기반 코스 추천 서비스 제공</li>
+      <li>바이크 정비 기록 관리 서비스 제공</li>
+      <li>부품 사진 기반 AI 상태 분석 서비스 제공 (타이어, 브레이크 패드, 체인 등)</li>
+      <li>서비스 개선 및 오류 수정</li>
+    </ul>
+  </div>
+
+  <!-- 3 -->
+  <div class="card">
+    <h2><span class="num">3</span> 개인정보 보유 및 이용 기간</h2>
+    <p style="font-size:14px;color:#495057;">수집된 개인정보는 서비스 이용 기간 동안 보관되며, 회원 탈퇴 시 즉시 삭제됩니다. 단, 관련 법령에 의해 보관이 필요한 경우 해당 기간 동안 보관합니다.</p>
+  </div>
+
+  <!-- 4 -->
+  <div class="card">
+    <h2><span class="num">4</span> 제3자 서비스 이용</h2>
+    <ul>
+      <li><strong>Supabase</strong> — 데이터베이스 및 인증 서비스 (데이터 저장)</li>
+      <li><strong>Anthropic Claude API</strong> — AI 정비 조언, 코스 추천, 부품 사진 분석</li>
+      <li><strong>OpenWeather API</strong> — 날씨 정보 제공</li>
+      <li><strong>Google Maps / 네이버 지도</strong> — 지도 및 네비게이션 서비스</li>
+      <li><strong>YouTube Music</strong> — 라이딩 음악 재생 서비스 연결 (앱 외부 연동)</li>
+      <li><strong>Expo / EAS</strong> — 앱 빌드 및 배포</li>
+    </ul>
+    <div class="highlight">각 서비스의 개인정보처리방침은 해당 서비스 제공업체의 정책을 따릅니다.</div>
+  </div>
+
+  <!-- 5 -->
+  <div class="card">
+    <h2><span class="num">5</span> 위치 정보 이용</h2>
+    <ul>
+      <li>라이딩 경로 기록 (백그라운드 GPS 추적 포함)</li>
+      <li>현재 위치 기반 날씨 정보 제공</li>
+      <li>주변 주유소, 라이딩 카페 검색</li>
+      <li>AI 코스 추천 시 출발지 설정</li>
+    </ul>
+    <div class="highlight">위치 정보는 앱 내에서만 사용되며, 제3자에게 제공되지 않습니다.</div>
+  </div>
+
+  <!-- 6 -->
+  <div class="card">
+    <h2><span class="num">6</span> 카메라 및 사진 권한</h2>
+    <ul>
+      <li>바이크 프로필 사진 등록 (사용자가 직접 선택한 경우에만)</li>
+      <li>AI 정비 조언 — 타이어·브레이크 패드·체인 등 부품 사진을 찍어 마모 상태를 분석하는 기능</li>
+      <li>보험·서류 사진 첨부 (사용자가 직접 선택한 경우에만)</li>
+    </ul>
+    <div class="highlight">카메라 및 갤러리에 접근하는 모든 사진은 사용자의 명시적인 선택에 의해서만 수집되며, AI 분석 외 다른 목적으로 사용되지 않습니다. 분석된 사진은 서버에 별도로 저장되지 않습니다.</div>
+  </div>
+
+  <!-- 7 -->
+  <div class="card">
+    <h2><span class="num">7</span> 개인정보 보호 조치</h2>
+    <ul>
+      <li>모든 데이터는 암호화하여 전송 및 저장 (HTTPS/TLS)</li>
+      <li>사용자별 데이터 접근 권한 제한 — 본인 데이터에만 접근 가능</li>
+      <li>Supabase Row Level Security(RLS) 적용 — 다른 사용자 데이터 접근 차단</li>
+      <li>AI API 키 등 민감 정보는 서버 환경변수에만 저장, 앱 코드에 포함하지 않음</li>
+    </ul>
+  </div>
+
+  <!-- 8 -->
+  <div class="card">
+    <h2><span class="num">8</span> 사용자의 권리</h2>
+    <ul>
+      <li>개인정보 열람 및 수정</li>
+      <li>개인정보 삭제 요청 (회원 탈퇴)</li>
+      <li>개인정보 처리 정지 요청</li>
+    </ul>
+    <div class="highlight">위 권리를 행사하시려면 아래 연락처로 문의해주세요. 요청을 받은 날로부터 10일 이내에 처리합니다.</div>
+  </div>
+
+  <!-- 9 -->
+  <div class="card">
+    <h2><span class="num">9</span> 아동 개인정보 보호</h2>
+    <p style="font-size:14px;color:#495057;">앱은 만 14세 미만 아동의 개인정보를 수집하지 않습니다. 만 14세 미만은 보호자의 동의 없이 앱을 이용할 수 없습니다.</p>
+  </div>
+
+  <!-- 10 -->
+  <div class="card">
+    <h2><span class="num">10</span> 개인정보처리방침 변경</h2>
+    <p style="font-size:14px;color:#495057;">개인정보처리방침이 변경되는 경우, 앱 내 공지 또는 이메일을 통해 사전에 안내합니다. 변경된 방침은 공지 후 7일이 지난 날부터 효력이 발생합니다.</p>
+  </div>
+
+  <!-- 11 -->
+  <div class="card">
+    <h2><span class="num">11</span> 문의</h2>
+    <div class="contact">
+      개인정보처리방침에 관한 문의사항은 아래로 연락해주세요.<br><br>
+      📧 이메일: <a href="mailto:ssaeng79@gmail.com">ssaeng79@gmail.com</a><br>
+      📱 앱명: 라이더노트 (Rider Note)
+    </div>
+  </div>
+
 </div>
-
-<h2>1. 수집하는 개인정보 항목</h2>
-<p>앱은 서비스 제공을 위해 아래 정보를 수집합니다:</p>
-<ul>
-  <li><strong>계정 정보:</strong> 이메일 주소 (회원가입 및 로그인 시)</li>
-  <li><strong>바이크 정보:</strong> 차종, 연식, 번호판, 주행거리 등 사용자가 직접 입력한 정보</li>
-  <li><strong>위치 정보:</strong> GPS 위치 (라이딩 경로 기록, 날씨 정보 제공 시)</li>
-  <li><strong>라이딩 기록:</strong> 주행 경로, 거리, 속도, 시간 등</li>
-  <li><strong>정비 기록:</strong> 주유, 정비, 소모품 교체 등 사용자가 입력한 정보</li>
-  <li><strong>사진:</strong> 바이크 사진 (사용자가 선택하여 업로드한 경우)</li>
-</ul>
-
-<h2>2. 개인정보 수집 및 이용 목적</h2>
-<ul>
-  <li>회원 가입 및 본인 확인</li>
-  <li>라이딩 경로 기록 및 관리 서비스 제공</li>
-  <li>날씨 정보 및 AI 기반 코스 추천 서비스 제공</li>
-  <li>바이크 정비 기록 관리 서비스 제공</li>
-  <li>서비스 개선 및 오류 수정</li>
-</ul>
-
-<h2>3. 개인정보 보유 및 이용 기간</h2>
-<p>수집된 개인정보는 서비스 이용 기간 동안 보관되며, 회원 탈퇴 시 즉시 삭제됩니다. 단, 관련 법령에 의해 보관이 필요한 경우 해당 기간 동안 보관합니다.</p>
-
-<h2>4. 제3자 서비스 이용</h2>
-<p>앱은 서비스 제공을 위해 아래 제3자 서비스를 이용합니다:</p>
-<ul>
-  <li><strong>Supabase:</strong> 데이터베이스 및 인증 서비스 (데이터 저장)</li>
-  <li><strong>Anthropic Claude API:</strong> AI 정비 조언 및 코스 추천</li>
-  <li><strong>OpenWeather API:</strong> 날씨 정보 제공</li>
-  <li><strong>Google Maps / 네이버 지도:</strong> 지도 및 네비게이션 서비스</li>
-  <li><strong>Expo / EAS:</strong> 앱 빌드 및 배포</li>
-</ul>
-<p>각 서비스의 개인정보처리방침은 해당 서비스 제공업체의 정책을 따릅니다.</p>
-
-<h2>5. 위치 정보 이용</h2>
-<p>앱은 다음 목적으로 위치 정보를 수집합니다:</p>
-<ul>
-  <li>라이딩 경로 기록 (백그라운드 GPS 추적 포함)</li>
-  <li>현재 위치 기반 날씨 정보 제공</li>
-  <li>주변 주유소, 라이딩 카페 검색</li>
-</ul>
-<p>위치 정보는 앱 내에서만 사용되며, 제3자에게 제공되지 않습니다.</p>
-
-<h2>6. 개인정보 보호 조치</h2>
-<ul>
-  <li>모든 데이터는 암호화하여 전송 및 저장</li>
-  <li>사용자별 데이터 접근 권한 제한 (본인 데이터만 접근 가능)</li>
-  <li>Supabase Row Level Security(RLS) 적용</li>
-</ul>
-
-<h2>7. 사용자의 권리</h2>
-<p>사용자는 언제든지 다음 권리를 행사할 수 있습니다:</p>
-<ul>
-  <li>개인정보 열람 및 수정</li>
-  <li>개인정보 삭제 요청 (회원 탈퇴)</li>
-  <li>개인정보 처리 정지 요청</li>
-</ul>
-
-<h2>8. 아동 개인정보 보호</h2>
-<p>앱은 만 14세 미만 아동의 개인정보를 수집하지 않습니다. 만 14세 미만은 보호자의 동의 없이 앱을 이용할 수 없습니다.</p>
-
-<h2>9. 개인정보처리방침 변경</h2>
-<p>개인정보처리방침이 변경되는 경우, 앱 내 공지 또는 이메일을 통해 사전에 안내합니다.</p>
-
-<h2>10. 문의</h2>
-<p>개인정보처리방침에 관한 문의사항은 아래로 연락해주세요:</p>
-<ul>
-  <li><strong>이메일:</strong> ssaeng79@gmail.com</li>
-  <li><strong>앱명:</strong> 라이더노트 (Rider Note)</li>
-</ul>
-
 </body>
 </html>
